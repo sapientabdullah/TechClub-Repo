@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cormorant Garamond";
+    background-color: black;
+}
+
+.fixed-left {
+    display: flex;
+    width: 30%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#fixed-left-image {
+    display: block;
+    width: 350px;
+    height: 200px;
+    border-radius: 25px;
+    margin: 25px 0;
+    margin: top right bottom left;
+    transition: 0.3s ease-in-out;
+
+}
+
+.divider {
+    width: 350px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+#fixed-left-image:hover {
+    transform: scale(1.1);
+}
