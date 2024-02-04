@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overscroll-behavior: none;
+}
+
 body {
     font-family: "Cormorant Garamond";
     background-color: black;
@@ -20,6 +24,7 @@ body {
 }
 
 #fixed-left-image {
+    object-fit: cover;
     display: block;
     width: 350px;
     height: 200px;
@@ -36,6 +41,38 @@ body {
     border-radius: 5px;
 }
 
-#fixed-left-image:hover {
+#fixed-left-image:hover,
+#image:hover {
     transform: scale(1.1);
+}
+
+li {
+    list-style-type: circle;
+}
+
+.fixed-right {
+    width: 70%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    background-color: #669bbc;
+    display: flex;
+    border-radius: 25px;
+    height: 100vh;
+    padding: 50px;
+
+}
+
+#image {
+    display: block;
+    max-width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 60px;
+    transition: transform 0.3s ease-in-out;
+    margin: 25px 0;
 }
