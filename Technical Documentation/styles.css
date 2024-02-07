@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: whitesmoke;
+    --secondary-color: rgba(0, 0, 0, 0.4);
+    --tertiary-color: rgba(0, 0, 0, 0.7);
+    --quaternary-color: black;
+    --quinary-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark-theme {
+    --primary-color: #121212;
+    --secondary-color: whitesmoke;
+    --tertiary-color: whitesmoke;
+    --quaternary-color: whitesmoke;
+    --quinary-color: rgba(255, 255, 255, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    border-right: 1.5px solid var(--secondary-color);
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-right: 1.5px solid var(--secondary-color);
+        position: relative;
+        height: 50%;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+}
+
+.navbar header {
+    text-align: center;
+    border-bottom: 1px solid var(--quaternary-color);
+}
+
+#nav-link {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    margin-left: 10px;
+}
+
+#nav-link:hover {
+    color: var(--tertiary-color);
+}
+
+.nav-item {
+    border-bottom: 1px solid var(--quinary-color);
+    padding: 12px;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
+}
+
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--quaternary-color);
+}
+
+#main-doc p,
+ul {
+    font-size: 20px;
+    color: var(--tertiary-color);
+}
+
+#main-doc {
+    position: absolute;
+    width: 70%;
+    text-align: left;
+    margin: 0 70px 0 70px;
+    top: 0;
+    right: 0;
+}
+
+.code {
+    background-color: var(--quinary-color);
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--tertiary-color);
+}
+
+a {
+    color: var(--tertiary-color);
+}
+
+a:active {
+    color: red;
+}
+
+#icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    top: 25px;
+    right: 0;
+}
