@@ -76,3 +76,33 @@ li {
     transition: transform 0.3s ease-in-out;
     margin: 25px 0;
 }
+
+#tribute-info {
+    font-size: 20px;
+}
+
+#image-caption {
+    font-size: 100px;
+}
+
+.twitter-tweet {
+    padding: 20px;
+    width: 350px;
+    transition: transform 0.3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
